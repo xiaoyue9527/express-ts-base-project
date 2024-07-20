@@ -7,10 +7,10 @@
     "start": "node dist/index.js",
     "dev": "ts-node-dev src/index.ts"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": ["express", "typescript", "nodejs", "web", "api", "mongodb", "jwt", "redis"],
+  "author": "xiaoyue9527",
+  "license": "MIT",
+  "description": "基于 Express 和 TypeScript 的基础项目，包含配置管理、日志处理、错误处理、数据库连接、路由定义、用户认证和缓存等多个模块。",
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.17",

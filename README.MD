@@ -73,7 +73,7 @@ BaseProject/express
 ### 1. 克隆项目
 
 ```bash
-git clone https://github.com/your-repo/express-ts-base-project.git
+git clone https://github.com/xiaoyue9527/express-ts-base-project.git
 cd express-ts-base-project
 ```
 
