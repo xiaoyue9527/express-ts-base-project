@@ -1,0 +1,43 @@
+APP:
+  name: MyApp
+  port: 3000
+  host: localhost
+
+jwt_secret: your_jwt_secret
+
+cors:
+  origin: "*"
+  methods:
+    - GET
+    - POST
+    - PUT
+    - DELETE
+  allowedHeaders:
+    - Content-Type
+    - Authorization
+
+database:
+  url: mongodb://localhost:27017/mydatabase
+  options:
+    connectTimeoutMS: 10000
+    socketTimeoutMS: 45000
+    maxPoolSize: 10
+    minPoolSize: 5
+    autoIndex: true
+    retryWrites: true
+    w: majority
+    readPreference: primary
+    authSource: admin
+
+redis:
+  host: localhost
+  port: 6379
+  password: your_redis_password
+  db: 0
+
+
+rateLimit:
+  windowMs: 600000 # 15 分钟
+  max: 100 # 每个 IP 在 15 分钟内最多只能发出 100 个请求
+  message: "Too many requests from this IP, please try again later."
+  customHeader: "x-forwarded-for" # 自定义头部字段
